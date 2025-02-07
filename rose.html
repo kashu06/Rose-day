@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Rose Day Ananya</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .rose-image {
+      width: 120px;
+      opacity: 0;
+      transform: translateY(100px);
+      animation: growRose 4s ease-in forwards;
+    }
+
+    .message {
+      margin-top: 40px;
+      font-size: 1.8rem;
+      color: #d72638;
+      opacity: 0;
+      animation: fadeIn 3s 4s forwards;
+    }
+
+    @keyframes growRose {
+      0% {
+        opacity: 0;
+        transform: translateY(100px) scale(0.5);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="rose-image" src="\pic.jpg" alt="Red Rose">
+    <div class="message">Happy Rose Day, Ananya! </div>
+    <div class="message">I LOVE YOU SO MUCH ❤️</div>
+  </div>
+</body>
+</html>
